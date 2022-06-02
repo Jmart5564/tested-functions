@@ -243,7 +243,7 @@ test('makes pet name array', (expect) => {
     Uses: let variable with reassignment, math operator, for...of loop
 */
 
-test()
+
 
 /*
     BONUS: Write a function that takes an array of pet types ('cat', 'dog', 'bird')

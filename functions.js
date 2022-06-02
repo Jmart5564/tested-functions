@@ -31,6 +31,3 @@ export function arrayString(name1, name2, name3) {
     return name1 + ' ' + name2 + ' ' + name3;
 }
 
-export function countOccurrences(arr, val) {
-
-}
