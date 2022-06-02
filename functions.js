@@ -18,3 +18,7 @@ export function triangleArea(x, y, z) {
 export function sumBoolean(x, y) {
     return x + y <= 100 ? true : false;
 }
+
+export function evenOdd(x) {
+    return x % 2 == 0 ? true : false;
+}
