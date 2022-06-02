@@ -15,3 +15,6 @@ export function triangleArea(x, y, z) {
     return x * y / z;
 }
 
+export function sumBoolean(x, y) {
+    return x + y <= 100 ? true : false;
+}

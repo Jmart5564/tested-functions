@@ -1,6 +1,6 @@
 // IMPORT MODULES under test here:
 import {
-    add, multiply, subtract, triangleArea,
+    add, multiply, subtract, triangleArea, sumBoolean
 } from './functions.js';
 
 const test = QUnit.test;
@@ -104,7 +104,25 @@ test('calculates the area of a triangle', (expect) => {
     Uses: Comparison operator(s), if/else control flow
 */
 
+test('number is more or less than 100 true', (expect) => {
+    const x = 25;
+    const y = 40;
+    const expected = true;
 
+    const actual = sumBoolean(x, y);
+
+    expect.equal(actual, expected);
+});
+
+test('number is more or less than 100 false', (expect) => {
+    const x = 25;
+    const y = 110;
+    const expected = false;
+
+    const actual = sumBoolean(x, y);
+
+    expect.equal(actual, expected);
+});
 
 /* 
     Write a function that takes a number and
