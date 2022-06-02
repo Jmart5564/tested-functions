@@ -1,6 +1,6 @@
 // IMPORT MODULES under test here:
 import {
-    add, multiply, subtract, triangleArea, sumBoolean, evenOdd
+    add, multiply, subtract, triangleArea, sumBoolean, evenOdd, formatName
 } from './functions.js';
 
 const test = QUnit.test;
@@ -169,6 +169,7 @@ test('number is odd', (expect) => {
     Uses: comparison operator, if/else control flow
 */
 
+
 /* 
     Write a function that takes in a first, last, and a third optional
     middle name parameter and returns a correctly formatted name
@@ -179,6 +180,17 @@ test('number is odd', (expect) => {
     Uses: let variable with reassignment, string concatenation, 
     existence comparison operator, if control flow
 */
+
+test('formatts name', (expect) => {
+    const first = 'Ruth';
+    const middle = 'Bader';
+    const last = 'Ginsberg';
+
+    const actual = formatName(first, middle, last);
+
+    expect.equal(formatName(first, middle, last), 'Ruth Bader Ginsberg');
+
+});
 
 /* 
     Write a function that takes a name, type, age, food, and a toys array
