@@ -1,6 +1,6 @@
 // IMPORT MODULES under test here:
 import {
-    add,
+    add, subtract,
 } from './functions.js';
 
 const test = QUnit.test;
@@ -38,6 +38,18 @@ test('adds two numbers', (expect) => {
 
     Uses: Math operator
 */
+
+test('subtracts two numbers', (expect) => {
+    const x = 20;
+    const y = 7;
+    const expected = 13;
+
+    const actual = subtract(x, y);
+
+    expect.equal(actual, expected);
+
+
+});
 
 /* 
     Write a function that takes in number of minutes
