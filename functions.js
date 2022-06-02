@@ -26,3 +26,7 @@ export function evenOdd(x) {
 export function formatName(first, middle, last) {
     return first + ' ' + middle + ' ' + last;
 }
+
+export function arrayString(name1, name2, name3) {
+    return name1 + ' ' + name2 + ' ' + name3;
+}

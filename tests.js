@@ -1,6 +1,6 @@
 // IMPORT MODULES under test here:
 import {
-    add, multiply, subtract, triangleArea, sumBoolean, evenOdd, formatName
+    add, multiply, subtract, triangleArea, sumBoolean, evenOdd, formatName, arrayString
 } from './functions.js';
 
 const test = QUnit.test;
@@ -224,6 +224,15 @@ test('formatts name', (expect) => {
 
     Uses: array literal syntax, deepEqual assertion 
 */
+test('makes pet name array', (expect) => {
+    const name1 = 'fido';
+    const name2 = 'felix';
+    const name3 = 'alex';
+    
+    const actual = arrayString(name1, name2, name3);
+
+    expect.equal(arrayString(name1, name2, name3), 'fido felix alex');
+});
 
 /*
     Write a function that takes an array of pet types ('cat', 'dog', 'bird')
