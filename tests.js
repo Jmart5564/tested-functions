@@ -1,6 +1,6 @@
 // IMPORT MODULES under test here:
 import {
-    add, multiply, subtract,
+    add, multiply, subtract, triangleArea,
 } from './functions.js';
 
 const test = QUnit.test;
@@ -79,6 +79,18 @@ test('calculates seconds per minute', (expect) => {
 
     Uses: Math operator(s)
 */
+
+test('calculates the area of a triangle', (expect) => {
+    const x = 4;
+    const y = 5;
+    const z = 2;
+    const expected = 10;
+
+    const actual = triangleArea(x, y ,z);
+
+    expect.equal(actual, expected);
+
+});
 
 /* 
     Write a function that takes in two 2 numbers
