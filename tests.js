@@ -86,7 +86,7 @@ test('calculates the area of a triangle', (expect) => {
     const z = 2;
     const expected = 10;
 
-    const actual = triangleArea(x, y ,z);
+    const actual = triangleArea(x, y, z);
 
     expect.equal(actual, expected);
 
@@ -186,7 +186,6 @@ test('formatts name', (expect) => {
     const middle = 'Bader';
     const last = 'Ginsberg';
 
-    const actual = formatName(first, middle, last);
 
     expect.equal(formatName(first, middle, last), 'Ruth Bader Ginsberg');
 
@@ -229,7 +228,6 @@ test('makes pet name array', (expect) => {
     const name2 = 'felix';
     const name3 = 'alex';
     
-    const actual = arrayString(name1, name2, name3);
 
     expect.equal(arrayString(name1, name2, name3), 'fido felix alex');
 });

@@ -20,7 +20,7 @@ export function sumBoolean(x, y) {
 }
 
 export function evenOdd(x) {
-    return x % 2 == 0 ? true : false;
+    return x % 2 === 0 ? true : false;
 }
 
 export function formatName(first, middle, last) {
